@@ -62,7 +62,7 @@ class SriskantharajahPlayer extends Player
         } elseif ($enemy['name'] == 'Chabi') {
           return parent::rockChoice();
  
-        } elseif ($enemy['name'] == 'Mazeau') {
+        } elseif ($enemy['name'] == 'Giovannini') {
             return parent::rockChoice();
 
 }
