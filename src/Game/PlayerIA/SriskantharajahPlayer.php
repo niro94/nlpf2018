@@ -41,14 +41,13 @@ class SriskantharajahPlayer extends Player
         // How can i display the result of each round ? $this->prettyDisplay()
         // -------------------------------------    -----------------------------------------------------
 
-                          
+                      $mychoice = parent::paperChoice(); 
        $moi = $this->result->getStatsFor($this->mySide);
        $enemy = $this->result->getStatsFor($this->opponentSide);
          $result = $this->result->getChoicesFor($this->opponentSide); 
        if ($moi['name'] == $enemy['name']) {
             return parent::scissorsChoice();            
         }        
-$mychoice = parent::paperChoice();
-  return $mychoice; 
+       else return $mychoice; 
  }   
 };
