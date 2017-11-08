@@ -56,5 +56,13 @@ class SriskantharajahPlayer extends Player
        elseif ($this->result->getLastScoreFor($this->mySide) == 0) {
             return parent::scissorsChoice(); }
        else return $mychoice;
+
+
+      if ($enemy['name'] == 'Tahri') {
+            return parent::scissorsChoice();
+        } 
+     elseif ($enemy['name'] == 'Diomande') {
+            return parent::paperChoice(); 
  }
+}
 };
