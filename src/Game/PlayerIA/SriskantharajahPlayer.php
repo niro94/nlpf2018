@@ -55,6 +55,6 @@ class SriskantharajahPlayer extends Player
         }        
        elseif ($this->result->getLastScoreFor($this->mySide) == 0) {
             return parent::scissorsChoice(); }
-      return $mychoice;
+       else return $mychoice;
  }
 };
