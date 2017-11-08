@@ -43,7 +43,7 @@ class SriskantharajahPlayer extends Player
 
                           
         
-    	$choice = parent::scissorsChoice();
-   return $choice; 
+    	$mychoice = parent::paperChoice();
+   return $mychoice; 
  }   
 };
