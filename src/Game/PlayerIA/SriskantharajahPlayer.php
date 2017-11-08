@@ -57,13 +57,16 @@ class SriskantharajahPlayer extends Player
             return parent::scissorschoice(); }
        else return $mychoice;
 
-        if ($enemy['name'] == 'Perella') {
+        if ($enemy['name'] == 'Tahri') {
             return parent::paperChoice();
-        } elseif ($enemy['name'] == 'Chabi') {
-          return parent::rockChoice();
+        } elseif ($enemy['name'] == 'Adda'){
+          return parent::paperChoice();
  
-        } elseif ($enemy['name'] == 'Giovannini') {
-            return parent::rockChoice();
+       } 
+
+elseif ($enemy['name'] == 'Laplaze') {
+            return parent::scissorsChoice();
+
 
 }
 
