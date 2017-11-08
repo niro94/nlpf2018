@@ -43,8 +43,12 @@ class SriskantharajahPlayer extends Player
 
                           
        $moi = $this->result->getStatsFor($this->mySide);
-       $enemy = $this->result->getStatsFor($this->opponentSide); 
-    	$mychoice = parent::paperChoice();
+       $enemy = $this->result->getStatsFor($this->opponentSide);
+         $result = $this->result->getChoicesFor($this->opponentSide); 
+       if ($moi['name'] == $enemy['name']) {
+            return parent::scissorsChoice();            
+        }        
+$mychoice = parent::paperChoice();
   return $mychoice; 
  }   
 };
