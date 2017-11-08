@@ -53,7 +53,7 @@ class SriskantharajahPlayer extends Player
        if ($moi['name'] == $enemy['name']) {
             return parent::rockChoice();            
         }        
-       elseif ($this->result->getLastScoreFor($this->mySide) == 500) {
+       elseif ($this->result->getLastScoreFor($this->mySide) == 0) {
             return parent::scissorschoice(); }
        else return $mychoice;
 
